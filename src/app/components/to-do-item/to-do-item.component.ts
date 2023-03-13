@@ -10,10 +10,19 @@ import { ToDoListServices } from '../../services/to-do-list-services';
 export class ToDoItemComponent {
   @Input() todo: ToDo;
   @Input() num: number;
+  public isDeletion: boolean = false;
 
   constructor(private todosService: ToDoListServices) {}
 
   setDone(checked: boolean): void {
     this.todosService.setDone(this.todo.id);
+  }
+
+  onDelete(): void {
+    this.isDeletion = true;
+  }
+
+  noDeletion(): void {
+    this.isDeletion = false;
   }
 }

@@ -15,11 +15,19 @@
   </div>
 
   <div class="actions">
-    <div class="icon-container" title="Change">
-      <i class="fas fa-pen"></i>
+    <div *ngIf="isDeletion" class="buttons">
+      <div class="button-yes" title="Click to delete">Yes</div>
+      <div class="button-no" title="Click to cancel" (click)="noDeletion()">
+        No
+      </div>
     </div>
-    <div class="icon-container" title="Delete">
-      <i class="fas fa-trash"></i>
+    <div *ngIf="!isDeletion" class="action-group">
+      <div class="icon-container" title="Change">
+        <i class="fas fa-pen"></i>
+      </div>
+      <div class="icon-container" title="Delete" (click)="onDelete()">
+        <i class="fas fa-trash"></i>
+      </div>
     </div>
   </div>
 </div>

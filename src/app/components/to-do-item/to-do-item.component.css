@@ -19,7 +19,9 @@
 }
 .actions {
   display: flex;
+  width: 90px;
 }
+
 .icon-container:first-child {
   margin-right: 16px;
 }
@@ -62,4 +64,43 @@
 .line.done {
   width: 100%;
   visibility: visible;
+}
+
+.action-group {
+  display: flex;
+  flex: 1;
+}
+
+.buttons {
+  /*border: 1px solid blue;*/
+  display: flex;
+  flex: 1;
+}
+
+.button-yes {
+  flex: 1;
+  background-color: #c45252;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  transition: 0.3s;
+  animation: opacity;
+}
+
+.button-yes:hover {
+  background-color: #d52121;
+}
+
+.button-no {
+  background-color: #3636ec;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.button-no:hover {
+  background-color: #1e1edc;
 }
