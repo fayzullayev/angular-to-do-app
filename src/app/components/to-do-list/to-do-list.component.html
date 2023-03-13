@@ -2,6 +2,6 @@
   <app-to-do-item
     *ngFor="let todo of todos; let i = index"
     [todo]="todo"
-    [num]="i"
+    [num]="i + 1"
   ></app-to-do-item>
 </div>
