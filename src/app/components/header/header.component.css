@@ -1,0 +1,14 @@
+.header{
+  padding: 40px;
+  color: white;
+}
+h1{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+p{
+  margin: 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
