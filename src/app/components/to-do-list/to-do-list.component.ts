@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ToDoList } from '../../types/to-do-list';
+import { ToDo } from '../../types/to-do';
 import { ToDoListServices } from '../../services/to-do-list-services';
 
 @Component({
@@ -8,7 +8,7 @@ import { ToDoListServices } from '../../services/to-do-list-services';
   styleUrls: ['./to-do-list.component.css'],
 })
 export class ToDoListComponent implements OnInit {
-  public todos: ToDoList[] = [];
+  public todos: ToDo[] = [];
 
   constructor(private todoService: ToDoListServices) {}
 

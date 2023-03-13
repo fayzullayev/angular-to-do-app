@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
-import { ToDoList } from '../types/to-do-list';
+import { ToDo } from '../types/to-do';
 import { Observable, Subject, Subscription } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ToDoListServices {
-  private todos: ToDoList[] = [
-    new ToDoList('Read a book'),
-    new ToDoList('Clean the room'),
-    new ToDoList('Prepare a food'),
+  private todos: ToDo[] = [
+    new ToDo('Read a book'),
+    new ToDo('Clean the room'),
+    new ToDo('Prepare a food'),
   ];
 
-  public todosSubscription = new Subject<ToDoList[]>();
+  public todosSubscription = new Subject<ToDo[]>();
 
-  get getTodos(): ToDoList[] {
+  get getTodos(): ToDo[] {
     return this.todos;
   }
 }
