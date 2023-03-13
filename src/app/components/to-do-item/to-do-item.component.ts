@@ -25,4 +25,8 @@ export class ToDoItemComponent {
   noDeletion(): void {
     this.isDeletion = false;
   }
+
+  confirmDeletion(): void {
+    this.todosService.deleteTodo(this.todo.id);
+  }
 }

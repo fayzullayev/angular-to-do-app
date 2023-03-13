@@ -16,7 +16,13 @@
 
   <div class="actions">
     <div *ngIf="isDeletion" class="buttons">
-      <div class="button-yes" title="Click to delete">Yes</div>
+      <div
+        class="button-yes"
+        title="Click to delete"
+        (click)="confirmDeletetion()"
+      >
+        Yes
+      </div>
       <div class="button-no" title="Click to cancel" (click)="noDeletion()">
         No
       </div>
