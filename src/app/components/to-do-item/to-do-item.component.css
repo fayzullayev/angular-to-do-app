@@ -1,19 +1,38 @@
-.todo-item{
-  padding: 15px 40px;
+.todo-item {
+  padding: 10px 40px;
   color: white;
   user-select: none;
-  background-color: #5722A4;
-  margin-bottom: 5px;
+  background-color: #5722a4;
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.fa-trash{
-  margin-left: 25px;
-  cursor: pointer;
+.fa-trash {
 }
 
-.title{
+.title {
+  font-size: 17px;
+}
+.actions {
+  display: flex;
+}
+.icon-container:first-child {
+  margin-right: 16px;
+}
 
+.icon-container {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.icon-container:hover {
+  background-color: #401978;
 }
