@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ToDoAddFormComponent } from './components/to-do-add-form/to-do-add-form.component';
 import { ToDoListComponent } from './components/to-do-list/to-do-list.component';
 import { ToDoItemComponent } from './components/to-do-item/to-do-item.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { ToDoItemComponent } from './components/to-do-item/to-do-item.component'
     ToDoListComponent,
     ToDoItemComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, MatCheckboxModule],
   providers: [],
   bootstrap: [AppComponent],
 })

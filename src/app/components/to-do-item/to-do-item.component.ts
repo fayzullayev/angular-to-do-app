@@ -9,4 +9,8 @@ import { ToDo } from '../../types/to-do';
 export class ToDoItemComponent {
   @Input() todo: ToDo;
   @Input() num: number;
+
+  setDone(checked: boolean): void {
+    console.log(checked);
+  }
 }

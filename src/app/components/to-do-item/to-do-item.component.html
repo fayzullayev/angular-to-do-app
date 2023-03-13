@@ -1,5 +1,14 @@
 <div class="todo-item">
-  <div class="title">{{ num }}. {{ todo.name }}</div>
+  <div class="title">
+    <mat-checkbox
+      [checked]="todo.done"
+      style="width: 100%"
+      color="primary"
+      (change)="setDone($event.checked)"
+    >
+      {{ num }}. {{ todo.name }}
+    </mat-checkbox>
+  </div>
 
   <div class="actions">
     <div class="icon-container" title="Change">
