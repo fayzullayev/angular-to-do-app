@@ -13,12 +13,10 @@ import { ToDoItemComponent } from './components/to-do-item/to-do-item.component'
     HeaderComponent,
     ToDoAddFormComponent,
     ToDoListComponent,
-    ToDoItemComponent
+    ToDoItemComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
