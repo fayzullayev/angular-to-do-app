@@ -5,8 +5,12 @@
       style="width: 100%"
       color="primary"
       (change)="setDone($event.checked)"
+      title="Do Check"
     >
-      {{ num }}. {{ todo.name }}
+      <div class="name">
+        {{ num }}. {{ todo.name }}
+        <div class="line" [ngClass]="{ done: todo.done }"></div>
+      </div>
     </mat-checkbox>
   </div>
 

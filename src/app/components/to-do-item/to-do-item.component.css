@@ -42,3 +42,24 @@
 .mdc-checkbox__background {
   border-color: white !important;
 }
+
+.name {
+  /*border: 1px solid red;*/
+  position: relative;
+  padding: 0 5px;
+}
+
+.line {
+  position: absolute;
+  width: 0;
+  border: 0.5px solid white;
+  top: 50%;
+  left: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+.line.done {
+  width: 100%;
+  visibility: visible;
+}

@@ -17,4 +17,14 @@ export class ToDoListServices {
   get getTodos(): ToDo[] {
     return this.todos;
   }
+
+  public setDone(id: string): void {
+    for (let i = 0; i < this.getTodos.length; i++) {
+      if (this.getTodos[i].id === id) {
+        this.getTodos[i].done = !this.getTodos[i].done;
+      }
+    }
+
+    this.todosSubscription.next(this.todos);
+  }
 }
